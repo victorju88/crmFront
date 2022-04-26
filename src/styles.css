@@ -1,0 +1,233 @@
+/* You can add global styles to this file, and also import other style files */
+@import "ag-grid-community/dist/styles/ag-grid.css";
+@import "ag-grid-community/dist/styles/ag-theme-balham.css";
+.flexbox-container {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    height:100vh;
+}
+
+.flexbox-container > div {
+    width: 50%;
+    padding: 10px;
+}
+
+.flexbox-container > div:first-child {
+    margin-right: 20px;
+}
+.card-text{
+    font-size: 3em;
+    color:navy;
+    font-weight: bold;
+}
+
+.dashbord{
+    text-align: center;
+    margin: 0 auto;
+}
+.mainprincipal{
+    text-align: center;
+    margin:0 auto;
+}
+.datos{
+    width: 300px;
+    height: 190px;
+    border-radius: 0.5em;
+    display: inline-block;
+    margin: 1em;
+    border:2px solid #f5f5f5 ;
+}
+.titulo{
+    background-color: black;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0.3em 0;
+    color:white;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Oxygen', sans-serif;
+}
+.tituloprospecto{
+    background-color: rgb(255, 204, 0);
+    font-weight: bold;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0.3em 0;
+    color:black;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Oxygen', sans-serif;
+}
+.titulocliente{
+    background-color: rgb(171, 45, 160);
+    color:black;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0.3em 0;
+    color:white;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Oxygen', sans-serif;
+}
+.titulotarea{
+    background-color: rgb(6, 56, 154);
+    font-weight: bold;
+    border-radius: 0.5em 0.5em 0 0;
+    padding: 0.3em 0;
+    color:white;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: 'Oxygen', sans-serif;
+}
+.numero{
+    font-size: 3em;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top:0.2em;
+}
+.ingresar{
+    text-align: center;
+}
+.bottonprospecto, .bottoncliente, .bottontarea, .bottondescargar{
+    padding: 0.5em 1em;
+    border-radius:0.3em;
+    background-color: #0b5ed7;
+    color:#fff;
+    transition: background-color 0.1s ease-in;
+}
+.bottonprospecto{
+    background-color: rgb(255, 204, 0);
+    color:black;
+    border-color:rgb(255, 204, 0, 0.965);
+}
+.bottondescargar{
+    background-color: rgb(10, 165, 28);
+    color:black;
+    border-color:rgb(9, 151, 26);
+}
+.bottoncliente{
+    background-color: rgb(171, 45, 160);
+    border-color:rgb(171, 45, 161, 0.916);
+}
+.bottontarea{
+    background-color: rgb(6, 56, 154);
+}
+.botton:hover{
+    background-color: #0d6efd;
+    transition: background-color 0.1s ease-out;
+}
+.bienvenido{
+    font-size: 3em;
+}
+.titulotabla{
+    background-color: #212121;
+    padding: 0.5em;
+}
+.modelo{
+    background-color: black;
+    width: 600px;
+    display: inline-block;
+    margin: 1em;
+}
+.coloricon{
+    color: white;
+}
+.descripciontitulo{
+    color: #FFF;
+    font-weight: bold;
+}
+.todo{
+    background-color: #0b5ed7;
+}
+.crear, .descargar{
+    margin:0.3em;
+}
+.opciones{
+    text-align: right;
+    /*background-color:rgb(215, 188, 37);*/
+    /*background-color:rgb(98, 118, 222);*/
+    background: #005C97;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  color: #FFF;
+}
+.color{
+    box-shadow: 5px 5px 20px #bab5b5;
+}
+.divtitulomodulo{
+    width: 53%;
+    display: block;
+    text-align: left;
+}
+.divbotones{
+    width: 45%;
+    display: block;
+}
+.divtitulomodulo, .divbotones{
+    display: inline-block;
+    vertical-align: middle;
+}
+.titulomodulo{
+    font-size: 2.1em;
+    text-align: left;
+}
+.descargar1{
+    color: white;
+}
+.descargar2{
+    color: white;
+    background-color: rgb(165, 59, 10);
+    border-color:rgb(156, 56, 10);
+    border-radius: 1em 0;
+    padding: 0.5em 0.8em;
+    transition: background-color 0.4s ease-out;
+    transition: border-radius 0.4s ease-out;
+}
+.descargar2, .crearbtn{
+    margin: 0.5em;
+}
+.crearbtn{
+    background-color: rgb(10, 165, 28);
+    color:#FFF;
+    border-color:rgb(14, 143, 29);
+/*     border-radius: 80%;
+    width: 50px;
+    height: 50px; */
+    border-radius: 1em 0;
+    padding: 0.5em 0.8em;
+    text-align: center;
+    transition: background-color 0.4s ease-out;
+    transition: border-radius 0.4s ease-out;
+}
+.crearbtn:hover{
+    background-color: rgb(7, 148, 23);
+    color:#FFF;
+    border-color:rgb(14, 143, 29);
+    border-radius: 0 0.5em;
+    transition: background-color 0.4s ease-in;
+    transition: border-radius 0.4s ease-in;
+}
+.descargar2:hover{
+    background-color: rgb(155, 55, 8);
+    border-color:rgb(156, 56, 10);
+    color:#FFF;
+    border-radius: 0 0.5em;
+    transition: background-color 0.4s ease-in;
+    transition: border-radius 0.4s ease-in;
+}
+.formulario{
+    background-color: aliceblue;
+    padding: 1em;
+}
+.colorfiel{
+    border-color: #212121;
+    box-shadow: 5px 5px 20px #bab5b5;
+}
+.modeloformulario{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+.titulolegend{
+    padding: 0.5em;
+}

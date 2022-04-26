@@ -1,0 +1,81 @@
+<div class="flexbox-container">
+<app-sidebar></app-sidebar>
+<div class="container" style="width:100%;">
+  <span class="bienvenido">Bienvenido </span><span class="bienvenido">Nombre</span>
+  <p><span>Revisa la última información</span></p>
+  <div class="mainprincipal">
+    <div class="dashbord">
+      <div class="datos">
+        <div class="tituloprospecto">
+          Prospectos en Seguimiento
+        </div>
+        <div class="numero">
+          100
+        </div>
+        <div class="ingresar">
+          <button class="bottonprospecto">Ver Prospectos</button>
+        </div>
+      </div>
+      <div class="datos">
+        <div class="titulocliente" style="font-weight: bold;">
+          Clientes
+        </div>
+        <div class="numero">
+          100
+        </div>
+        <div class="ingresar">
+          <button class="bottoncliente">Ver Clientes</button>
+        </div>
+      </div>
+      <div class="datos">
+        <div class="titulotarea">
+          Tareas
+        </div>
+        <div class="numero">
+          100
+        </div>
+        <div class="ingresar">
+          <button class="bottontarea">Ver Tareas</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row"><hr></div>   
+    <div class="row">
+    <div class="tablas">
+      <div class="modelo">
+          <div class="titulotabla">
+            <span class="material-icons coloricon">
+              leaderboard
+          </span>
+          &nbsp;
+            <span class="descripciontitulo">Prospectos</span>
+          </div>
+          <ag-grid-angular
+            style="width: 600px; height: 300px;"
+            class="ag-theme-balham"
+            [rowData]="rowData"
+            [columnDefs]="columnDefs">
+            [pagination]="true"
+          </ag-grid-angular>
+      </div>
+      <div class="modelo">
+        <div class="titulotabla">
+          <span class="material-icons coloricon">
+            task
+        </span>
+        &nbsp;
+          <span class="descripciontitulo">Tareas</span>
+        </div>
+        <ag-grid-angular
+          style="width: 600px; height: 300px;"
+          class="ag-theme-balham"
+          [rowData]="rowData"
+          [columnDefs]="columnDefs">
+          [pagination]="true"
+        </ag-grid-angular>
+    </div>
+    </div>
+</div>
+
+</div>
